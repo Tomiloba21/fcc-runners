@@ -1,4 +1,4 @@
-package com.tomiloba.runners.users;
+package com.tomiloba.runners.run;
 
 import org.springframework.stereotype.Component;
 

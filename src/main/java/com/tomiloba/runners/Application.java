@@ -2,6 +2,7 @@ package com.tomiloba.runners;
 
 import com.tomiloba.runners.run.Location;
 import com.tomiloba.runners.run.Run;
+import com.tomiloba.runners.run.RunRepository;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.boot.CommandLineRunner;
@@ -21,11 +22,13 @@ public class Application {
 	}
 
 
-	@Bean
-	CommandLineRunner runner(){
-		return args -> {
-			Run run  = new Run(1,"First run", LocalDateTime.now(),LocalDateTime.now().plus(1,ChronoUnit.HOURS),5, Location.OUTDOOR);
-			log.info("RUN : " + run);
-		};
-	}
+//	@Bean
+//	CommandLineRunner runner(RunRepository runRepository){
+//		return args -> {
+//			Run run  = new Run(1,"First run", LocalDateTime.now(),LocalDateTime.now().plusMinutes(30),5, Location.OUTDOOR);
+//			runRepository.create(run);
+//		};
+//	}
+
+
 }
