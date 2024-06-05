@@ -11,8 +11,6 @@ import org.springframework.context.annotation.Bean;
 
 import java.time.LocalDateTime;
 
-import java.time.temporal.ChronoUnit;
-
 @SpringBootApplication
 public class Application {
 	private static final Logger log =  LoggerFactory.getLogger(Application.class);
@@ -23,11 +21,11 @@ public class Application {
 	}
 
 
-	@Bean
-	CommandLineRunner runner(){
-		return args -> {
-			Run run  = new Run(1,"First run", LocalDateTime.now(),LocalDateTime.now().plus(1,ChronoUnit.HOURS),5, Location.OUTDOOR);
-			log.info("RUN : " + run);
-		};
-	}
+//	@Bean
+//	CommandLineRunner runner(){
+//		return args -> {
+//			Run run  = new Run(1,"First run", LocalDateTime.now(),LocalDateTime.now().plus(1,ChronoUnit.HOURS),5, Location.OUTDOOR);
+//			log.info("RUN : " + run);
+//		};
+//	}
 }
