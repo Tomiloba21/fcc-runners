@@ -1,16 +1,43 @@
+GET http://localhost:8080/api/runs/98
+Accept: application/json
+
+
+
+
+###
 #GET http://localhost:8080/api/runs/99
 #Accept: application/json
 
+GET http://localhost:8080/api/runs/1
+
 ###
-POST  http://localhost:8080/api/runs
+PUT  http://localhost:8080/api/runs/1
 content-Type:application/json
 
 {
-  "id": 12,
-  "title":"",
+  "id": 1,
+  "title":"Monday Morning  (EDITED) Run",
   "startedOn": "2024-04-10T15:00:12.49766",
   "completedOn":"2024-04-10T16:01:12.497678" ,
-  "miles": 8,
-  "location": "OUTDOOR"
+  "miles": 9,
+  "location": "INDOOR"
 
 }
+
+
+
+###
+POST  http://localhost:8080/api/runs/1
+content-Type:application/json
+
+{
+  "id": 1,
+  "title":"Monday Morning  (EDITED) Run",
+  "startedOn": "2024-04-10T15:00:12.49766",
+  "completedOn":"2024-04-10T16:01:12.497678" ,
+  "miles": 9,
+  "location": "INDOOR"
+
+}
+
+
