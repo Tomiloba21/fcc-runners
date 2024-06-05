@@ -21,11 +21,11 @@ public class Application {
 	}
 
 
-//	@Bean
-//	CommandLineRunner runner(){
-//		return args -> {
-//			Run run  = new Run(1,"First run", LocalDateTime.now(),LocalDateTime.now().plus(1,ChronoUnit.HOURS),5, Location.OUTDOOR);
-//			log.info("RUN : " + run);
-//		};
-//	}
+	@Bean
+	CommandLineRunner runner(){
+		return args -> {
+			Run run  = new Run(1,"First run", LocalDateTime.now(),LocalDateTime.now().plusMinutes(30),5, Location.OUTDOOR);
+			log.info("RUN : " + run);
+		};
+	}
 }
