@@ -1,0 +1,16 @@
+#GET http://localhost:8080/api/runs/99
+#Accept: application/json
+
+###
+POST  http://localhost:8080/api/runs
+content-Type:application/json
+
+{
+  "id": 12,
+  "title":"",
+  "startedOn": "2024-04-10T15:00:12.49766",
+  "completedOn":"2024-04-10T16:01:12.497678" ,
+  "miles": 8,
+  "location": "OUTDOOR"
+
+}
