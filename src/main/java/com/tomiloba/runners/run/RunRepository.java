@@ -23,6 +23,7 @@ import java.util.Optional;
 public class RunRepository {
 
 
+
     private static final Logger log = LoggerFactory.getLogger(RunRepository.class);
 
     private final JdbcClient jdbcClient;
@@ -45,6 +46,10 @@ public class RunRepository {
                 .param("id",id)
                 .query(Run.class)
                 .optional();
+
+
+
+
     }
 
     public void create(Run run){

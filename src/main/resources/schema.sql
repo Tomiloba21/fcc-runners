@@ -1,9 +1,9 @@
 CREATE TABLE IF NOT EXISTS RUN(
-    id INT NOT NULL,
-    title varchar(250) NOT NULL,
+  id INT NOT NULL,
+  title varchar(250) NOT NULL,
     started_on timestamp NOT NULL,
     completed_on timestamp NOT NULl,
     miles INT  NOT NULL,
     location varchar(10) NOT NULL,
     PRIMARY KEY(id)
-);
+    );
